@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+       <div class="container">
+        <img src="rupedolle.jpeg" alt="" class="app-icon">
+        <h3 class="app-title">Currency-Converter</h3>
+        <div class="amount">
+            <h3>Enter Amount</h3>
+            <input type="text" class="User-amount" value="1">
+        </div>
+
+        <div class="form-to">
+            <div class="form-box">
+                <h3>From</h3>
+                <div class="form-input">
+                    <div class="form-flag">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                    </div>
+                    <input type="text" value="USD" readonly>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="from-county-option"></div>
+            </div>
+
+            <div class="switch-btn">
+                <i class='bx bx-transfer'></i>
+            </div>
+
+            <div class="to-box">
+                <h3>To</h3>
+                <div class="to-input">
+                    <div class="to-flag">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                    </div>
+                    <input type="text" value="INR" readonly>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="to-country-option"></div>
+            </div>
+        </div>
+        <button class="convert-btn">Get Exchange</button>
+        <div class="result-box">
+            <h3 class="result">100 USD =861.11 INR</h3>
+        </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="apikey.js"></script>
+    <script src="country-list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

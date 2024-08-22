@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(bac.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+.container {
+    padding: 20px;
+    width: 320px;
+    background: white;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+
+}
+
+.container .app-icon {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    left: 105px;
+}
+
+.container .app-title {
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.container .amount {
+    margin-top: 25px;
+    height: 80px;
+    width: 100%;
+}
+
+.container .amount h3 {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.container .amount input {
+    all: unset;
+    height: 42px;
+    width: 94%;
+    border: 1px solid gray;
+    padding-left: 10px;
+    margin-top: 3px;
+    border-radius: 3px;
+}
+
+.container .form-to {
+    height: 100px;
+    width: 100%;
+}
+
+.container .form-box,
+.container .to-box {
+
+    height: 100%;
+    width: 50%;
+    padding: 7px;
+}
+
+.container .to-box {
+    position: absolute;
+    right: 20px;
+    margin-top: -100px;
+    width: 44%;
+}
+
+.container .form-box {
+    margin-left: -5px;
+}
+
+.container .form-box h3,
+.container .to-box h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container .to-box h3 {
+    margin-left: 20px;
+}
+
+.container .form-box .form-input,
+.container .to-box .to-input {
+    height: 45px;
+    width: 110px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container .form-box .form-input i,
+.container .to-box .to-input i {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.container .to-box .to-input {
+    margin-left: 20px;
+
+}
+
+.container .form-box .form-input .form-flag,
+.container .to-box .to-input .to-flag {
+
+    height: 27px;
+    width: 2px;
+    margin-left: 5px;
+}
+
+.container .form-box .form-input .form-flag img,
+.container .to-box .to-input .to-flag img {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 35px;
+    margin-top: -1px;
+}
+
+.container .to-box .to-input .to-flag img {
+    left: 38px;
+}
+
+.container .form-box .form-input input,
+.container .to-box .to-input input {
+    all: unset;
+    height: 30px;
+    width: 62px;
+    text-align: left;
+    position: relative;
+    left: 40px;
+    font-size: 15px;
+}
+
+.container .to-box .to-input input {
+    left: 40px;
+}
+
+.container .switch-btn {
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container .convert-btn {
+    all: unset;
+    height: 40px;
+    background: blue;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 3px;
+    margin-top: -8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.container .result-box {
+    height: 45px;
+    width: 100%;
+    background-color: rgb(91, 201, 201);
+
+    border-radius: 3px;
+    margin-top: 8px;
+    font-size: 20px;
+    transition: all .2s;
+    display: none;
+}
+
+.container .result-box .result {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s;
+    white-space: nowrap;
+    margin-top: 22px;
+}
+
+.container .from-county-option,
+.container .to-country-option {
+    height: 100px;
+    width: 110px;
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: 3px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+    z-index: 1;
+    transform: scale(0);
+    transition: all .2s;
+    transform-origin: top;
+
+}
+
+.container .to-country-option {
+    margin-left: 20px;
+}
+
+.container .from-county-option::-webkit-scrollbar,
+.container .to-country-option::-webkit-scrollbar {
+    display: none;
+}
+
+.container .from-county-option li,
+.container .to-country-option li {
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 6px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding-left: 50px;
+    cursor: pointer;
+
+}
+
+.container .from-county-option li img,
+.container .to-country-option li img {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.container .from-county-option.active,
+.container .to-country-option.active {
+    transform: scale(1);
+    transition: all .2s;
+    transform-origin: top;
+}
+
+
+
+
+
+
+
+/* media query */
+
+/* @media (max-width:288) {
+    .container {
+        width: 288px;
+        ;
+    }
+}
+
+@media (max-width:205) {
+
+    /* .container{
+        width: ;
+    } */
+/* .container .app-title {
+        margin-left: 17px;
+    }
+
+    .container .form-box h3,
+    .container .to-box h3 {
+        margin-left: 14px;
+    }
+*/
